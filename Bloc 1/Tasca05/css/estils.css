@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #2d3748;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #1a365d;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+header nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    width: 90%;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #edf2f7;
+    color: #718096;
+    font-size: 0.9rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+input:focus {
+    border-color: #3182ce;
+}
+
+/* Marcatge visual de camps amb error */
+input.camp-error {
+    border-color: #e53e3e;
+    background-color: #fff5f5;
+}
+
+/* Missatges d'error sota cada camp */
+.missatge-error {
+    color: #e53e3e;
+    font-size: 0.85rem;
+    margin-top: 0.35rem;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3182ce;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #2b6cb0;
+}
+
+.btn-secondary {
+    background-color: #718096;
+}
+
+.btn-secondary:hover {
+    background-color: #4a5568;
+}
+
+.dades-taula {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.dades-taula th, .dades-taula td {
+    padding: 0.85rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.dades-taula th {
+    background-color: #f7fafc;
+    width: 35%;
+}

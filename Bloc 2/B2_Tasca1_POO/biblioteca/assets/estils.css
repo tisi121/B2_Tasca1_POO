@@ -1,0 +1,177 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #233044;
+    background: #f3f6fa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #145da0;
+}
+
+.capcalera {
+    background: #17324d;
+    color: #fff;
+    padding: 1rem max(1rem, calc((100% - 1100px) / 2));
+}
+
+.marca {
+    color: #fff;
+    font-size: 1.35rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+nav a,
+.capcalera a {
+    color: #fff;
+}
+
+.contenidor {
+    margin: 2rem auto;
+    max-width: 1100px;
+    min-height: 65vh;
+    padding: 0 1rem;
+}
+
+.peu {
+    align-items: center;
+    background: #e5ebf1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem max(1rem, calc((100% - 1100px) / 2));
+}
+
+.taula-contenidor {
+    overflow-x: auto;
+}
+
+table {
+    background: #fff;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    min-width: 650px;
+    width: 100%;
+}
+
+th,
+td {
+    border-bottom: 1px solid #d5dee8;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #e8eef5;
+}
+
+.targetes,
+.accions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.targeta {
+    background: #fff;
+    border: 1px solid #d5dee8;
+    border-radius: 0.5rem;
+    flex: 1 1 190px;
+    padding: 1rem;
+}
+
+.numero {
+    color: #145da0;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.formulari {
+    align-items: end;
+    background: #fff;
+    border: 1px solid #d5dee8;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+label {
+    display: grid;
+    gap: 0.35rem;
+}
+
+input,
+select,
+button,
+.boto {
+    border: 1px solid #9aabba;
+    border-radius: 0.25rem;
+    font: inherit;
+    padding: 0.5rem 0.7rem;
+}
+
+button,
+.boto {
+    background: #145da0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.avis {
+    background: #e3f3e8;
+    border-left: 4px solid #31834a;
+    padding: 0.8rem;
+}
+
+.error {
+    background: #fff0ef;
+    border-left: 4px solid #b83227;
+    padding: 1rem;
+}
+
+.etiqueta {
+    border-radius: 1rem;
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+}
+
+.etiqueta-ok {
+    background: #e3f3e8;
+}
+
+.etiqueta-error {
+    background: #fff0ef;
+}
+
+pre {
+    background: #17212b;
+    border-radius: 0.4rem;
+    color: #f2f6fa;
+    overflow-x: auto;
+    padding: 1rem;
+}
