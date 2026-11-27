@@ -24,6 +24,7 @@ Obriu `http://localhost:8000`. Les rutes disponibles i les seves funcions estan 
 - `composer install` ha generat correctament l’autoloader.
 - `php -l` ha validat els fitxers PHP del projecte.
 - Les proves amb PHP han comprovat les dades inicials, el préstec vençut, la serialització, el canvi de reserva a préstec i les excepcions.
+- La demo dels mètodes màgics comprova els resultats esperats de `__toString()`, `__get()`, `__set()` i `__call()`.
 - El servidor PHP ha respost correctament a les pàgines principals, demos i operacions de préstec, reserva, retorn amb multa i reinici.
 - No cal cap base de dades ni dependència externa.
 
