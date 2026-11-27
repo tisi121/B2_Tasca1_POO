@@ -50,4 +50,4 @@ La primera visita crea 4 llibres, 3 revistes, 3 DVDs, 4 usuaris, dos préstecs a
 
 ## Vídeo de demostració
 
-Enllaç pendent: afegiu aquí l'enllaç del vídeo de dos minuts abans de lliurar la tasca.
+Enllaç al vídeo de demostració: [Obrir vídeo a Google Drive](https://drive.google.com/drive/folders/1MxrnmCuMXSussB2o-tgX1zfGb3FQsUqS?usp=drive_link)

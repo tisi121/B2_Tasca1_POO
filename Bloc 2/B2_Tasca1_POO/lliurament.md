@@ -24,11 +24,11 @@ Obriu `http://localhost:8000`. Les rutes disponibles i les seves funcions estan 
 - `composer install` ha generat correctament l’autoloader.
 - `php -l` ha validat els fitxers PHP del projecte.
 - Les proves amb PHP han comprovat les dades inicials, el préstec vençut, la serialització, el canvi de reserva a préstec i les excepcions.
+- La demo de serialització comprova que les notificacions no es desen i que la llista es restaura buida.
 - La demo dels mètodes màgics comprova els resultats esperats de `__toString()`, `__get()`, `__set()` i `__call()`.
 - El servidor PHP ha respost correctament a les pàgines principals, demos i operacions de préstec, reserva, retorn amb multa i reinici.
 - No cal cap base de dades ni dependència externa.
 
 ## Pendents
 
-- Afegir al `README.md` l’enllaç real del vídeo de demostració; encara no s’ha gravat.
-- Publicar el projecte en un repositori Git i afegir-hi l’historial de commits requerit per l’enunciat.
+- Completar l’historial de commits requerit per l’enunciat: almenys cinc commits fets en dies diferents.
