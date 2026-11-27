@@ -33,7 +33,7 @@ Obriu `http://localhost:8000` al navegador. No cal cap base de dades.
 | `index.php?page=auditoria` | Historial d'accions de tots els materials |
 | `index.php?page=demo_magic` | Exemples dels mètodes màgics |
 | `index.php?page=demo_serialization` | Exemple de serialització d'un usuari |
-| `index.php?page=demo_exceptions` | Exemples de les excepcions |
+| `index.php?page=demo_exceptions` | Comprova que cada operació genera l’excepció esperada |
 | `index.php?page=demo_autoload` | Classes carregades de l'aplicació |
 | `index.php?page=reset` | Reiniciar les dades de la sessió |
 
