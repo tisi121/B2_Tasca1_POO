@@ -43,6 +43,7 @@ La primera visita crea 4 llibres, 3 revistes, 3 DVDs, 4 usuaris, dos préstecs a
 
 ## Decisions
 
+- `PageRouter` separa la resolució de les pàgines de l’arrencada i el renderitzat.
 - `Material` concentra les propietats i operacions comunes; cada subclasse calcula la seva multa.
 - `Reservable` només s'implementa a `Llibre` i `DVD`.
 - `Auditoria` comparteix l'historial entre els materials.

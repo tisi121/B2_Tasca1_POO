@@ -4,6 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 use App\Data\DataGenerator;
 use App\Exceptions\MaterialNoDisponibleException;
 use App\Exceptions\MaterialNoTrobatException;
+use App\Http\PageRouter;
 use App\Models\Biblioteca;
 
 session_start();
@@ -39,26 +40,7 @@ function intParam(string $nom): ?int
 $page = isset($_GET['page']) && is_string($_GET['page']) ? $_GET['page'] : 'inici';
 
 try {
-    $vista = match ($page) {
-        'inici' => 'views/inici.php',
-        'materials' => 'views/materials.php',
-        'material' => 'views/material.php',
-        'usuaris' => 'views/usuaris.php',
-        'usuari' => 'views/usuari.php',
-        'prestec' => 'views/prestec.php',
-        'retorn' => 'views/retorn.php',
-        'prestecs' => 'views/prestecs.php',
-        'reserva' => 'views/reserva.php',
-        'reserves' => 'views/reserves.php',
-        'estadistiques' => 'views/estadistiques.php',
-        'auditoria' => 'views/auditoria.php',
-        'demo_magic' => 'views/demo_magic.php',
-        'demo_serialization' => 'views/demo_serialization.php',
-        'demo_exceptions' => 'views/demo_exceptions.php',
-        'demo_autoload' => 'views/demo_autoload.php',
-        default => 'views/404.php',
-    };
-
+    $vista = PageRouter::obtenirVista($page);
     require __DIR__ . '/' . $vista;
 } catch (MaterialNoDisponibleException $e) {
     $error = (string) $e;
